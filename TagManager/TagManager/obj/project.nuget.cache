@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Q6RvMNHce+4mXrDirC0sQTrtNjeDa83v2+KSLhdyWN5WXI76yHnNMJJaDc+rXDBgIUznBZq2xHe4kRS/myl3vQ==",
+  "dgSpecHash": "q9PxXJ2Qtnb5j1SCzYYuEQwof+mOwWSks3TqncZsn1i8EPWFgn8h8rnud9GVdF4Vc9XS525dy5dSynwe6hXCOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\irene\\source\\repos\\DotnetTools\\TagManager\\TagManager\\TagManager.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\irene\\.nuget\\packages\\microsoft.codeanalysis.netanalyzers\\6.0.0\\microsoft.codeanalysis.netanalyzers.6.0.0.nupkg.sha512",
     "C:\\Users\\irene\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
   ],
   "logs": []

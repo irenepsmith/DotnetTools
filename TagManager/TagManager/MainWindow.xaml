@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TagManager"
         mc:Ignorable="d"
-        Title="Tag Manager" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="Snippet Tag Manager" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid Margin="20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" MinHeight="32" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
@@ -18,9 +18,9 @@
                 <ColumnDefinition MinWidth="75" />
                 <ColumnDefinition Width="65" />
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,0,5,0">Working Directory: </TextBlock>
-            <TextBox x:Name="txtWorkingDirectory" Grid.Row="0" Grid.Column="1" Margin="0,0,5,0"/>
-            <Button Grid.Row="0" Grid.Column="2" Content="Change" />
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,5,5,0" FontSize="14">Working Directory: </TextBlock>
+            <TextBox x:Name="txtWorkingDirectory" Grid.Row="0" Grid.Column="1" Margin="0,5,5,0" FontSize="14"/>
+            <Button x:Name="BtnPickDirectory" Grid.Row="0" Grid.Column="2" Content="Change" FontSize="14" Click="BtnPickDirectory_Click" />
         </Grid>
         <Grid Grid.Row="1" Grid.Column="0" Margin="0, 10">
             <Grid.ColumnDefinitions>
@@ -28,10 +28,10 @@
                 <ColumnDefinition Width="Auto" MinWidth="65"/>
                 <ColumnDefinition Width="65" />
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,5,5,0">Language: </TextBlock>
-            <ComboBox Grid.Row="0" Grid.Column="1" Margin="0,5,5,0">
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,0,5,0">Language: </TextBlock>
+            <ComboBox Grid.Row="0" Grid.Column="1" Margin="0,0,5,0">
                 <ComboBoxItem Content="C++" />
-                <ComboBoxItem Content="C#" />
+                <ComboBoxItem Content="C#" IsSelected="True"/>
                 <ComboBoxItem Content="Java" />
                 <ComboBoxItem Content="Go" />
                 <ComboBoxItem Content="JavaScript" />
@@ -40,7 +40,7 @@
                 <ComboBoxItem Content="Ruby" />
                 <ComboBoxItem Content="Rust" />
             </ComboBox>
-            <Button x:Name="BtnScan" Grid.Row="0" Grid.Column="2" Margin="0,5,0,0" Click="BtnScan_Click">Scan...</Button>
+            <Button x:Name="BtnScan" Grid.Row="0" Grid.Column="2" Margin="6,0,0,0" Click="BtnScan_Click">Scan...</Button>
         </Grid>
         <ListBox Grid.Row="2" Grid.Column="0" x:Name="lstTags">
             <ListBox.ItemTemplate>

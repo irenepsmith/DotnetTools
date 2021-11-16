@@ -5,7 +5,6 @@
 namespace TagManager
 {
     using System.Collections.Generic;
-    using System.Windows;
     using TagManager.Data;
 
     /// <summary>
@@ -36,6 +35,14 @@ namespace TagManager
             }
 
             this.lstTags.ItemsSource = tags;
+        }
+
+        private void BtnPickDirectory_Click(object sender, RoutedEventArgs e)
+        {
+            // Create OpenFileDialog
+
+            // Get the selected file name and display in a TextBox.
+            // Load content of file in a TextBlock
         }
     }
 }
