@@ -41,4 +41,5 @@ For example: create_project CopyObjectExample S3
 will create a console application called "CopyObjectExample" for the Amazon Simple Storage
 Service.
 
-[To be continued...]
+Add the packages for the AWS Services the project will use.
+
